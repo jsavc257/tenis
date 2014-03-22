@@ -12,6 +12,7 @@
 </head> 
 <body> 
 
+//pagina principal
 <div data-role="page" id="inicio" data-theme="e">
 	<div data-role="header">
 		<h1>Tenis MR. "X"</h1>
@@ -77,6 +78,8 @@ Nuestros valores
 	</div>
 </div>
 
+
+//pagina de nike
 <div data-role="page" id="nike" data-theme="a">
 	<div data-role="header">
     <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back" >BACK </a>
@@ -111,6 +114,7 @@ Nuestros valores
 	</div>
 </div>
 
+//pagina de jordan
 <div data-role="page" id="jordan" data-theme="c">
 	<div data-role="header">
       <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back" >BACK </a>
@@ -146,6 +150,7 @@ Nuestros valores
 	</div>
 </div>
 
+//pagina de adidas
 <div data-role="page" id="adidas" data-theme="e">
 	<div data-role="header">
       <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back" >BACK </a>
@@ -190,7 +195,19 @@ Nuestros valores
     <img src="imagenes/ayuda.PNG" > <br>
 	Si tiene alguna duda puede comunicarse en nuestro chat on line !!!! <br>
    GRACIAS	<br>
+  
+  //div para grupo de controles con data div
+  <div data-role="controlgroup" data-type="horizontal">
+   <p>Botones</p>
+   <a href="#jordan" class="ui-btn">Jordan</a>
+   <a href="#adidas" class="ui-btn">Adidas </a>
+   <a href="#nike" class="ui-btn"> Nike</a>
+  </div>
+  
+   
    	</div>
+     <a href="#chat">CHAT EN LINEA </a>
+   
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" data-iconpos="top">
        		<ul>
@@ -214,6 +231,8 @@ Nuestros valores
 	</div>
 </div>
 
+
+//pagina de contacto
 <div data-role="page" id="contacto" data-theme="e">
 	<div data-role="header">
       <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back">BACK </a>
@@ -254,6 +273,42 @@ Nuestros valores
 	</div>
 </div>
 
+//pagina para dialogo
+
+<div data-role="page" data-dialog="true" id="chat" data-theme="e">
+	<div data-role="header">
+      <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back" >BACK </a>
+		<h1>Asistente en Linea</h1>
+	</div>
+	<div data-role="content" align="center">	 
+    <img src="imagenes/ayuda.PNG" > <br>
+	Si tiene alguna duda puede comunicarse en nuestro chat on line !!!! <br>
+   GRACIAS	<br>
+   <a href="#inicio" > Regresa al principal </a>
+   
+   	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#inicio" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
 
 
 </body>
