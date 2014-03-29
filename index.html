@@ -21,6 +21,7 @@
    <a href="#jordan" class="ui-btn">Jordan</a>
    <a href="#adidas" class="ui-btn">Adidas </a>
    <a href="#nike" class="ui-btn"> Nike</a>
+   <a href="#clientes" class="ui-btn"> Directorio de clientes</a>
 </div>
 
 	<div data-role="header" data-position="fixed" data-fullscreen="true">
@@ -89,6 +90,9 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
 <div data-role="popup" id="myPopup">
   <p>tiendamrX@facebook.com</p>
 </div>
+
+
+ <a href="#clientes" class="ui-btn ui-btn-inline ui-corner-all">Lista de Clientes</a>
      </p>
      
      <p>Catalogo de nuestras principales marcas</p>
@@ -139,6 +143,91 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
 	</div>
 </div>
 
+<!-- pagina de clientes -->
+<div data-role="page" id="clientes" data-theme="b">
+	<div data-role="header">
+      <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back">BACK </a>
+		<h1>Información de clientes</h1>
+	</div>
+	<div data-role="content" align="center">	 
+    <img src="imagenes/contacto.PNG" width="150" height="150"> <br>
+	<table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+  <thead>
+    <tr>
+      <th data-priority="6">IDClientes</th>
+      <th>Nombre legal</th>
+      <th data-priority="1">Nombre del representante</th>
+      <th data-priority="2">Domicilio</th>
+      <th data-priority="3">Ciudad</th>
+      <th data-priority="4">E-mail</th>
+      <th data-priority="5">Pais</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Zapaterias Guadalajara</td>
+      <td>Armando tazos</td>
+      <td>12 poniente # 15</td>
+      <td>Puebla</td>
+      <td>mrjuan123@gmail.com</td>
+      <td>México</td>
+    </tr>
+    <tr>
+          <td>2</td>
+          <td>Zapateria 3 Hermanos</td>
+          <td>Juan Perez</td>
+          <td>5 de mayo #2312</td>
+          <td>Puebla</td>
+          <td>jony-guapo56@yahoo.com.mx</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Zapaterias Pirma Brasil</td>
+          <td>Tifon de souza</td>
+          <td>120 copacabana #25.</td>
+          <td>copacabana</td>
+          <td>tfion_bra13@hotmail.com</td>
+          <td>Brasil</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Tenis Monterrey S.A.</td>
+          <td>Pedro Flores</td>
+          <td>Avenida la fragua #45</td>
+          <td>Monterrey</td>
+          <td>peter67parker@hotmail.com</td>
+          <td>México</td>
+        </tr>
+    
+    
+  </tbody>
+</table>
+
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#inicio" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
 
 <!--pagina de nike-->
 <div data-role="page" id="nike" data-theme="b">
