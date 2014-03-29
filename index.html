@@ -14,7 +14,15 @@
 <body> 
 
 <!--pagina principal-->
-<div data-role="page" id="inicio" data-theme="b">
+<div data-role="page" id="inicio" data-theme="b" data-position="fixed" data-fullscreen="true" inline>
+
+<div data-role="panel" id="mipanel">
+<h2>MENU SECUNDARIO</h2>
+   <a href="#jordan" class="ui-btn">Jordan</a>
+   <a href="#adidas" class="ui-btn">Adidas </a>
+   <a href="#nike" class="ui-btn"> Nike</a>
+</div>
+
 	<div data-role="header">
 		<h1>Tenis MR. "X"</h1>
 	</div>
@@ -29,7 +37,7 @@
 <div align="center">
 <img src="imagenes/Captura3.PNG", width="200" height="200" > <br>
 </div>
- Quiénes somos? <br>
+<p> Quiénes somos? <br>
  <br>
 
 Tienda MR. "X" nació en el 2014 abriendo la primera tienda virtual para dispositivos moviles en venta de calzado deportivo en Rafael Lara Grajales, Puebla.
@@ -41,7 +49,35 @@ Nuestros valores
     Excelencia
     Innovación
     <br>
-    
+   <p> Los zapatos tenis, que en un principio fueron elaborados para competiciones deportivas, son, hoy en día el otro calzado del mundo. Quizás el setenta por ciento de los habitantes del planeta los utiliza más que el calzado de cuero y piel.
+
+El megamillonario Bill Gates los calza vestido de esmoquin e igual decenas de cantantes raperos y los más célebres actores de Hollywood y estudiantes, amas de casa, repartidores de pizzas, burócratas, etcétera. Son cómodos y son aceptados en cualquier evento laboral y educativo.
+
+Los hay que valen 20 pesos hasta 10 y 15 mil pesos el par, como los que usan los hijos del Mesías, el Lastre de México. Y no es sólo un par, pose cada engendro de Él, diez o más pares.
+
+En 1895, Joseph William Foster, un corredor inglés desarrolló el primer par de zapatos para el atleta con pico y los nombró "spikes".
+
+Durante los cinco años siguientes, Foster fabricó manualmente zapatos de atleta para los más excelentes atletas de Inglaterra y, el modelo Foster de Lujo, el spike, fue líder en su categoría por cincuenta años.
+
+En 1920, el alemán Adolf "Adi" Dessler, junto con su hermano Rudolf, confeccionó el primer calzado deportivo a partir de precarios materiales disponibles en esa época, la postguerra de la Primera Guerra Mundial, durante la cual todo material escaseaba.
+
+Nació la Dessler Company. La tradición olímpica de Adidas se consolida en 1928, cuando algunos atletas compitieron en Ámsterdam, Holanda, con los zapatos de Dessler.
+
+Al llevarse a cabo la Olimpiada de Berlín, en1936, el afroamericano Jesse Owens, que era portero en un hotel de Nueva York, con ese mismo calzado Adidas, consiguió cuatro medallas de oro.
+
+La leyenda sostiene que el canciller de Alemania, Adolfo Hitler, abandonó el estadio olímpico ante el triunfo de "un negro, ante la supremacía de los atletas alemanes arios".
+
+Falso. En sus memorias, Owens consigna: "Cuando pasé a recibir las medallas, el Canciller se levantó, me saludó con la mano y le devolví la señal. Pero pienso que los reporteros tuvieron el mal gusto de criticar al hombre del momento en Alemania".
+
+Owens se alojaba en un hotel del Berlín, en el cual no existía discriminación, situación que no estaba aceptada en su propio país pues en los hoteles para blancos no eran admitidos negros.
+
+Cuando Oweens regresó a su puesto de trabajo como portero de hotel comentó: "El presidente Franklin Delano Roosevelt no me dio la mano. Deduzco que como se la había dado a Hitler yo era un nazifascista. Luego, la propaganda antinazi, creó esa anécdota de que Hitler despreció al negro y se me obligó a decir que Hitler me había rechazado".
+
+Esta es, menos que más, la historia sumaria de los zapatos tenis, convertidos en el calzado de mayorías de todas las edades. En mi caso no los usaba hasta que el director de cine Rubén Gámez, me invitó hacer un papel en la película Tequila, que patrocinó el cardiólogo Teodoro Césarman, y yo tenía que pasar ante un puesto de periódicos, haciendo ejercicio, vestido con ropa deportiva, me asaltaban y corría descalzo ya sin la ropa ni los tenis que portaba antes.
+
+Conservé la indumentaria deportiva y los tenis, hasta que un día decidí utilizarlos hasta su límite y ya nunca más. Son cómodos, los corredores y marchistas los utilizan y la niña, la hija de mi proveedor de tamales y cigarros, lleva unos que se encienden, focos rojos, en el talón y la punta, cuando ella camina.
+
+Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
     <a href="#mypop" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"> E-mail </a>
     
     <div data-role="popup" id="mypop">
@@ -53,13 +89,23 @@ Nuestros valores
 <div data-role="popup" id="myPopup">
   <p>tiendamrX@facebook.com</p>
 </div>
-    
+     </p>
+     
+     <p>Catalogo de nuestras principales marcas</p>
+   <a href="#mipanel" class="ui-btn ui-corner-all ui-shadow">MENU SECUNDARIO</a>
+  
 </div>
         <div data-role="content">
         	<div data-role="collapsible-set">
             	<div data-role="collapsible" data-collapsed="true">
                 <h1> Buscanos en Gran Parte del Pais</h1> <br>
-                <center><img src="imagenes/mapa.PNG"> </center>
+               <a href="#mymapa" data-rel="popup" data-position-to="window">
+<img src="imagenes/mapa.PNG" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="mymapa">
+      <p>Localiza una de nuestras tiendas en los siguientes estados. </p> 
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="imagenes/mapa.PNG" style="width:800px;height:500px;" alt="Skaret View">
+    </div>
                 
                 </div>
             
@@ -70,7 +116,7 @@ Nuestros valores
         
         
 	</div>
-	<div data-role="footer" data-position="fixed">
+	<div data-role="footer" data-position="fixed" data-fullscreen="true" inline>
        <div data-role="navbar" data-iconpos="top">
        		<ul>
              	<li>
