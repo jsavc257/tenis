@@ -93,8 +93,25 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
 </div>
 
 
- <a href="#clientes" class="ui-btn ui-btn-inline ui-corner-all">Lista de Clientes</a>
-     </p>
+ <a href="#clientes" class="ui-btn ui-btn-inline ui-corner-all">Lista de Clientes</a> </p>
+   
+   <a href="#loginpp" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Iniciar sesión</a>
+
+    <div data-role="popup" id="loginpp" class="ui-content" style="min-width:250px;">
+      <form method="post" action="demoform.asp">
+        <div>
+          <h3>Información de acceso</h3>
+          <label for="usrnm" class="ui-hidden-accessible">Nombre de usuario:</label>
+          <input type="text" name="user" id="usrnm" placeholder="Usuario">
+          <label for="pswd" class="ui-hidden-accessible">Contraseña:</label>
+          <input type="password" name="passw" id="pswd" placeholder="Contraseña">
+          <label for="log">Mantener conectado</label>
+          <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+          <input type="submit" data-inline="true" value="Iniciar sesion">
+          <input type="reset" data-inline="true" value="Limpiar campos">
+        </div>
+      </form>
+    </div>
      
      <p>Catalogo de nuestras principales marcas</p>
    <a href="#mipanel" class="ui-btn ui-corner-all ui-shadow">MENU SECUNDARIO</a>
@@ -155,19 +172,71 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
 	
     <form method="post" action="demoform.asp">
       <p>Formulario de Registro</p>
-     pagina de registro de clientes   <label for="nombre">Nombre(s):</label>
+      
+    
+   <div class="ui-field-contain">
+      <label for="nombre">Nombre(s):</label>
       <input type="text" name="nombre" id="nombre" data-clear-btn="true">
       <label for="apellidos">Apellidos:</label>
       <input type="text" name="apellidos" id="apellidos" data-clear-btn="true">
-      <div class="ui-field-contain">
-        <label for="fecha">F. Nacimiento </label>
-        <input type="date" name="fecha" id="fecha">
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" placeholder="Tu email..">
-      </div>
-      <input type="submit" data-inline="true" value="Submit">
+      <label for="fecha">F. Nacimiento </label>
+      <input type="date" name="fecha" id="fecha">
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" placeholder="Tu email..">
+    </div>
+    
+    <div class="ui-field-contain">
+    <fieldset data-role="controlgroup">
+      <legend>Selecciona tu ocupación:</legend>
+      <label for="Estudiante">Estudiante</label>
+      <input type="radio" name="ocupacion" id="Estudiante" value="Estudiante">
+      <label for="Docente">Docente</label>
+      <input type="radio" name="ocupacion" id="Docente" value="Docente">
+      <label for="Empleado">Empleado</label>
+      <input type="radio" name="ocupacion" id="Empleado" value="Empleado">	
+      </fieldset>
 
+    </div>
+    
+       <div class="ui-field-contain">
+         <fieldset data-role="controlgroup">
+        <legend>¿Qué calificación merece nuestro servicio?:</legend>
+          <label for="diez">10 Excelente</label>
+          <input type="checkbox" name="calif" id="diez" value="10">
+          <label for="seis">6 Regular</label>
+          <input type="checkbox" name="calif" id="seis" value="6">
+          <label for="cero">0 Mala</label>
+          <input type="checkbox" name="calif" id="cero" value="0">	
+      </fieldset>
+
+
+    </div>
       
+      <div class="ui-field-contain">
+               <fieldset class="ui-field-contain">
+        <label for="day">Seleccione su marca de tenis favorita</label>
+        <select name="day" id="day">
+          <option value="nike">Nike</option>
+          <option value="jordan">Air Jordan</option>
+          <option value="adidas">Adidas</option>
+          <option value="rebook">Rebook</option>
+          <option value="and1">And 1</option>
+          <option value="converse">Converse</option>
+          <option value="pirma">Pirma Brasil</option>
+        </select>
+      </fieldset>
+    </div>
+      
+   <div class="ui-field-contain">
+        <label for="info">Agrege un comentario a cerca de lo que agregaria a nuestro sitio:</label>
+        <textarea name="addinfo" id="info"></textarea>
+    </div>   
+      
+      <div data-role="fieldcontain">
+			<input type="submit" data-inline="true" name="submit" value="Enviar" />
+	  </div>
+     
+         
     </form>
     
 	</div>
