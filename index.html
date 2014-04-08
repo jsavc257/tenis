@@ -21,7 +21,8 @@
    <a href="#jordan" class="ui-btn">Jordan</a>
    <a href="#adidas" class="ui-btn">Adidas </a>
    <a href="#nike" class="ui-btn"> Nike</a>
-   <a href="#clientes" class="ui-btn"> Directorio de clientes</a>
+   <a href="#clientes" class="ui-btn"> Directorio de Clientes</a>
+   <a href="#registro" class="ui-btn"> Registro de Clientes</a>
 </div>
 
 	<div data-role="header" data-position="fixed" data-fullscreen="true">
@@ -142,6 +143,57 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
         </div>
 	</div>
 </div>
+
+<!-- pagina de registro de clientes -->
+<div data-role="page" id="registro" data-theme="b">
+	<div data-role="header">
+      <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back">BACK </a>
+		<h1>Registro de Clientes</h1>
+	</div>
+	<div data-role="content" align="center">	 
+    <img src="imagenes/registrologo.PNG" width="150" height="150"> <br>
+	
+    <form method="post" action="demoform.asp">
+      <p>Formulario de Registro</p>
+     pagina de registro de clientes   <label for="nombre">Nombre(s):</label>
+      <input type="text" name="nombre" id="nombre" data-clear-btn="true">
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" name="apellidos" id="apellidos" data-clear-btn="true">
+      <div class="ui-field-contain">
+        <label for="fecha">F. Nacimiento </label>
+        <input type="date" name="fecha" id="fecha">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Tu email..">
+      </div>
+      <input type="submit" data-inline="true" value="Submit">
+
+      
+    </form>
+    
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#inicio" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
 
 <!-- pagina de clientes -->
 <div data-role="page" id="clientes" data-theme="b">
