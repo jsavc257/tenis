@@ -10,6 +10,11 @@
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<script src="funciones.js" type="text/javascript">
+</script>
+<script src="funciones2.js" type="text/javascript">
+</script>
 </head> 
 <body> 
 
@@ -98,7 +103,7 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
    <a href="#loginpp" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Iniciar sesión</a>
 
     <div data-role="popup" id="loginpp" class="ui-content" style="min-width:250px;">
-      <form method="post" action="demoform.asp">
+      <form id="form_account" method="post">
         <div>
           <h3>Información de acceso</h3>
           <label for="usrnm" class="ui-hidden-accessible">Nombre de usuario:</label>
@@ -107,7 +112,8 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
           <input type="password" name="passw" id="pswd" placeholder="Contraseña">
           <label for="log">Mantener conectado</label>
           <input type="checkbox" name="login" id="log" value="1" data-mini="true">
-          <input type="submit" data-inline="true" value="Iniciar sesion">
+          <!--<input type="submit" data-inline="true" value="Iniciar sesion">-->
+          <input type="submit" name="enviar" data-inline="true" value="Iniciar sesion" id="create_account" />
           <input type="reset" data-inline="true" value="Limpiar campos">
         </div>
       </form>
@@ -170,7 +176,7 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
 	<div data-role="content" align="center">	 
     <img src="imagenes/registrologo.PNG" width="150" height="150"> <br>
 	
-    <form method="post" action="demoform.asp">
+    <form id="form_registro" method="post">
       <p>Formulario de Registro</p>
       
     
@@ -233,7 +239,9 @@ Por ahora, los tenis son lo que son. El otro calzado histórico.</p>
     </div>   
       
       <div data-role="fieldcontain">
-			<input type="submit" data-inline="true" name="submit" value="Enviar" />
+			<!--<input type="submit" data-inline="true" name="submit" value="Enviar" />-->
+            <input type="submit" name="enviar" data-inline="true" value="Enviar" id="simula_envio" />
+                      <input type="reset" data-inline="true" value="Limpiar campos">
 	  </div>
      
          
